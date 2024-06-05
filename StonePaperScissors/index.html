@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>RockPaperScissors</title>
+
+</head>
+<body class="text-center">
+  <div class="heading h-14 bg-black  flex justify-center items-center">
+    <h1 class="text-center text-white text-4xl sm:text-xl" >Rock Paper Scissors</h1>
+  </div>
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12 mt-10 sm:mt-20">
+    <div class="choice h-32 w-32 sm:h-40 sm:w-40 rounded-full flex justify-center items-center hover:bg-blue-900 cursor-pointer" id="rock">
+      <img src="./images/rock.png" class="h-28 w-28 sm:h-36 sm:w-36 object-cover rounded-full"/>
+    </div>
+    <div class="choice h-32 w-32 sm:h-40 sm:w-40 rounded-full flex justify-center items-center hover:bg-blue-900 cursor-pointer" id="paper">
+      <img src="./images/paper.png" class="h-28 w-28 sm:h-36 sm:w-36 object-cover rounded-full"/>
+    </div>
+    <div class="choice h-32 w-32 sm:h-40 sm:w-40 rounded-full flex justify-center items-center hover:bg-blue-900 cursor-pointer" id="scissors">
+      <img src="./images/scissors.png" class="h-28 w-28 sm:h-36 sm:w-36 object-cover rounded-full"/>
+    </div>
+  </div>
+
+  <div class="flex flex-col sm:flex-row justify-center items-center text-xl sm:text-2xl mt-10 sm:mt-12 gap-10 sm:gap-20">
+    <div class="score">
+      <p id="user-score" class="text-3xl sm:text-4xl">0</p>
+      <p>You</p>
+    </div>
+    <div class="score">
+      <p id="comp-score" class="text-3xl sm:text-4xl">0</p>
+      <p>Comp</p>
+    </div>
+  </div>
+
+  <div class="msg-container mt-10 sm:mt-20">
+    <p id="msg" class="bg-blue-900 text-white text-xl sm:text-2xl inline p-3 sm:p-4 rounded-lg">Play your move</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
